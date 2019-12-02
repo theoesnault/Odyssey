@@ -1,0 +1,164 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <div class="container-fluid" style="margin-top: 1%;">
+        <div class="row" style="text-align:center">
+            <!-- Colonne d'informations -->
+            <div class="col-sm-2">
+                <ul class="nav flex-column">
+                    <li class="nav-item" style="margin: 1%;">
+                        <img src="https://placehold.it/125x125" alt="Profile Picture" style="border-radius: 10px;">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled"><h4>Théo Esnault</h4></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="">Add Friend</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pictures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nouvelle Publication</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm">
+                <h2>Account Feed</h2>
+                <!-- POST -->
+                <div class="post">
+                    <a href="account">Théo Esnault</a>
+                    <small><small>2 minutes ago</small></small>
+                    <p style="padding: 1%;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum exercitationem perferendis rerum totam
+                        consequatur atque ipsum officiis laboriosam consequuntur mollitia voluptas, et officia, recusandae 
+                        debitis tempora amet dolores reprehenderit voluptatum voluptate. Officia veniam, assumenda architecto
+                        odio officiis iusto veritatis. Ipsam a officia ipsum beatae! Impedit, quibusdam? Nulla repellendus 
+                        ex excepturi maxime totam magnam eos est!
+                    </p>
+                    <div class="row justify-content-center">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Like</a>
+                                <!-- <a class="nav-link" href="#"><img src="ressources/icons/heart_filled" alt="Like"></a> -->
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Comment</a>
+                                <!-- <a class="nav-link" href="#"><img src="ressources/icons/comment" alt="Comment"></a> -->
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Share</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!-- comments -->
+                    <div class="comments" style="margin: 1%;">
+                        <div class="comment" style="border: 1px solid #ddd; border-radius: 5px;">
+                            <div class="col-sm-2">
+                                <a href="account">Chloé Esnault</a>
+                                <small>19/06/2019</small>
+                            </div>
+                            <div class="col-sm">
+                                <div class="contenu">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos possimus delectus hic nostrum odit officiis!
+                                    Consectetur itaque officiis nam incidunt!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin de comments -->
+                </div>
+                <div class="post">
+                    <a href="account">Théo Esnault</a>
+                    <small><small>2 minutes ago</small></small>
+                    <p style="padding: 1%;">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum exercitationem perferendis rerum totam
+                        consequatur atque ipsum officiis laboriosam consequuntur mollitia voluptas, et officia, recusandae 
+                        debitis tempora amet dolores reprehenderit voluptatum voluptate. Officia veniam, assumenda architecto
+                        odio officiis iusto veritatis. Ipsam a officia ipsum beatae! Impedit, quibusdam? Nulla repellendus 
+                        ex excepturi maxime totam magnam eos est!
+                    </p>
+                    <div class="row justify-content-center">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="ressources/icons/heart_filled" alt="Like"></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><img src="ressources/icons/comment" alt="Comment"></a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Share</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!-- comments -->
+                    <div class="comments" style="margin: 1%;">
+                        <div class="comment" style="border: 1px solid #ddd; border-radius: 5px;">
+                            <div class="col-sm-2">
+                                <a href="account">Chloé Esnault</a>
+                                <small>19/06/2019</small>
+                            </div>
+                            <div class="col-sm">
+                                <div class="contenu">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos possimus delectus hic nostrum odit officiis!
+                                    Consectetur itaque officiis nam incidunt!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin de comments -->
+                </div>
+                <!-- Fin de post -->
+            </div>
+            
+
+            <div class="col-sm-2">
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Friends
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <a href=""><img src="http://placehold.it/75x75" alt=""></a>
+                                <a href=""><img src="http://placehold.it/75x75" alt=""></a>
+                                <a href=""><img src="http://placehold.it/75x75" alt=""></a>
+                                <a href=""><img src="http://placehold.it/75x75" alt=""></a>
+                                <hr>
+                                <a href="">See more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Pictures
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            <a href=""><img src="http://placehold.it/75x75" alt=""></a>
+                            <a href=""><img src="http://placehold.it/75x75" alt=""></a>
+                            <a href=""><img src="http://placehold.it/75x75" alt=""></a>
+                            <a href=""><img src="http://placehold.it/75x75" alt=""></a>
+                            <hr>
+                            <a href="">See more</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
